@@ -163,6 +163,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="DiabetesJS\AddFood.js" />
     <Content Include="DiabetesJS\app.js" />
     <Content Include="DiabetesJS\CalSugar.js" />
     <Content Include="DiabetesJS\Home.js" />
@@ -5204,6 +5205,8 @@
     <Content Include="Views\Register\Register.cshtml" />
     <Content Include="Views\Register\EditProfile.cshtml" />
     <Content Include="Views\RecordSugar\RecordSugar.cshtml" />
+    <Content Include="Views\Register\Profile.cshtml" />
+    <Content Include="Views\CalSugar\AddFood.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
