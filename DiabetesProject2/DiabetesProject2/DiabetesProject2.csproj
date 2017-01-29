@@ -153,6 +153,7 @@
     <Compile Include="Controllers\CalSugarController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\NutritionController.cs" />
     <Compile Include="Controllers\RecordSugarController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
@@ -166,13 +167,17 @@
     <Content Include="DiabetesJS\AddFood.js" />
     <Content Include="DiabetesJS\app.js" />
     <Content Include="DiabetesJS\CalSugar.js" />
+    <Content Include="DiabetesJS\FoodDetail.js" />
     <Content Include="DiabetesJS\Home.js" />
     <Content Include="DiabetesJS\EditProfile.js" />
+    <Content Include="DiabetesJS\Nutrients.js" />
     <Content Include="DiabetesJS\RecordSugar.js" />
+    <Content Include="DiabetesJS\ShowFood.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\graph.png" />
     <Content Include="Images\Login\logo-100.png" />
     <Content Include="Images\catering-icon.png" />
     <Content Include="Images\food.png" />
@@ -5206,6 +5211,9 @@
     <Content Include="Views\Register\EditProfile.cshtml" />
     <Content Include="Views\CalSugar\AddFood.cshtml" />
     <Content Include="Views\RecordSugar\RecordSugar.cshtml" />
+    <Content Include="Views\CalSugar\FoodDetail.cshtml" />
+    <Content Include="Views\CalSugar\ShowFood.cshtml" />
+    <Content Include="Views\Nutrition\Nutrients.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
