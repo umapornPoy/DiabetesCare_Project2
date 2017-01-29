@@ -1,3 +1,3 @@
-﻿app.controller('RecordSugarController', ['$scope', function ($scope) {
+﻿app.controller('RecordSugardController', ['$scope', function ($scope) {
 
     }])

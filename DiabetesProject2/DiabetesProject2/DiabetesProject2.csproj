@@ -153,7 +153,7 @@
     <Compile Include="Controllers\CalSugarController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\RecordController.cs" />
+    <Compile Include="Controllers\RecordSugarController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -5205,7 +5205,7 @@
     <Content Include="Views\Register\Register.cshtml" />
     <Content Include="Views\Register\EditProfile.cshtml" />
     <Content Include="Views\CalSugar\AddFood.cshtml" />
-    <Content Include="Views\Record\RecordSugar.cshtml" />
+    <Content Include="Views\RecordSugar\RecordSugar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

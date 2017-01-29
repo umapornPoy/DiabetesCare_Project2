@@ -14,13 +14,14 @@ app.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'Register/EditProfile',
             controller: 'EditProfileController'
         })
-         .when('/RecordSugar', {
-             templateUrl: 'Record/RecordSugar',
-             controller: 'RecordSugarController'
-         })
+     
          .when('/AddFood', {
              templateUrl: 'CalSugar/AddFood',
              controller: 'AddFoodController'
+         })
+         .when('/RecordSugar', {
+             templateUrl: 'RecordSugar/RecordSugar',
+             controller: 'RecordSugardController'
          })
      .otherwise({
          templateUrl: '/'
