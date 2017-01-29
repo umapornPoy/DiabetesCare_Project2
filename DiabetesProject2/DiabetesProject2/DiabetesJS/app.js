@@ -3,7 +3,8 @@ app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
 
     .when('/', {
-        templateUrl: 'Home/Home'
+        templateUrl: 'Home/Home',
+        controller: 'HomeController'
     })      
      .when('/CalSugar', {
          templateUrl: 'CalSugar/CalSugar',
