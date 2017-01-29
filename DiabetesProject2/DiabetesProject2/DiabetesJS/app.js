@@ -9,6 +9,10 @@ app.config(['$routeProvider', function ($routeProvider) {
      .when('/CalSugar', {
          templateUrl: 'CalSugar/CalSugar',
          controller: 'CalSugarController'
+     })
+        .when('/Profile', {
+            templateUrl: 'Register/Profile',
+            controller: 'ProfileController'
         })
      .otherwise({
          templateUrl: '/'
