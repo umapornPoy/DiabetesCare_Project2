@@ -173,6 +173,8 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\Login\logo-100.png" />
+    <Content Include="Images\catering-icon.png" />
+    <Content Include="Images\food.png" />
     <Content Include="Images\user-icon.png" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
