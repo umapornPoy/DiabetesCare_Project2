@@ -15,7 +15,7 @@ app.config(['$routeProvider', function ($routeProvider) {
             controller: 'EditProfileController'
         })
          .when('/RecordSugar', {
-             templateUrl: 'RecordSugar/RecordSugar',
+             templateUrl: 'Record/RecordSugar',
              controller: 'RecordSugarController'
          })
          .when('/AddFood', {
