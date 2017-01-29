@@ -1,0 +1,195 @@
+﻿<div ng-controller="RecordSugarController">
+    <div id="head" class="panel-heading ui-draggable-handle">
+        <h1 class="panel-title" style="color:white" align="center"></h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>
+                        Register
+                    </h2>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="x_content">
+                    <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12 form-group has-feedback">
+                                UserName
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" class="form-control has-feedback-left" id="username" placeholder="username" required="required">
+                                <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12 form-group has-feedback">
+                                Password
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="password" class="form-control has-feedback-left" id="password" placeholder="password" required="required">
+                                <span class="fa fa-unlock-alt form-control-feedback left" aria-hidden="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12 form-group has-feedback">
+                                ConfirmPassword
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="password" class="form-control has-feedback-left" id="confirm" placeholder="confirm password" required="required">
+                                <span class="fa fa-unlock-alt form-control-feedback left" aria-hidden="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">
+                                Firstname
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="firstname" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">
+                                Lastname
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="text" id="lastname" name="lastname" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="genders" class="control-label col-md-3 col-sm-3 col-xs-12">
+                                Gender
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <p>
+                                    <input class="flat iradio_flat-green" type="radio"
+                                           name="male" value="1" />
+                                    Male
+                                    <input class="flat iradio_flat-green" type="radio"
+                                           name="female" value="2" />
+                                    Female
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="phone">
+                                Email
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="email" class="form-control has-feedback-left" id="email" placeholder="example@email.com" required="required">
+                                <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">
+                                Age
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input type="number" id="lastname" name="lastname" required="required" class="form-control col-md-7 col-xs-12">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-3" for="last-name">
+                                Weight
+                            </label>
+                            <div class="col-md-2 col-sm-3 col-xs-3">
+                                <input type="number" id="lastname" name="lastname" required="required" class="form-control col-md-2 col-xs-6">
+                            </div>
+                            <label class="control-label col-md-1 col-sm-1 col-xs-1" for="height">
+                                Height
+                            </label>
+                            <div class="col-md-2 col-sm-2 col-xs-3">
+                                <input type="number" id="lastname" name="lastname" required="required" class="form-control col-md-2 col-xs-6">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                                Symptom
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control">
+                                    <option value="">Select Symptom</option>
+                                    <option value="1">insulin</option>
+                                    <option value="2">Not insulin</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                                Complication
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control">
+                                    <option value="">Select Complication</option>
+                                    <option value="1">retinopathy</option>
+                                    <option value="2">nephropathy</option>
+                                    <option value="3">neuropathy</option>
+                                    <option value="4">Diabetic ulcer</option>
+                                    <option value="5">Diabetic foot</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                                Disease
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control">
+                                    <option value="">Select Disease</option>
+                                    <option value="1">Cardiovascular Disease)</option>
+                                    <option value="2">High blood pressure</option>
+                                    <option value="3">kidney disease</option>
+                                    <option value="4">peripheral neuropathy Disease</option>
+                                    <option value="5">Eye disease</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="drug" class="control-label col-md-3 col-sm-3 col-xs-12">
+                                Drug allergy
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <p>
+                                    <input class="flat iradio_flat-green" type="radio"
+                                           name="yes" value="1"> Yes
+                                    <input class="flat iradio_flat-green" type="radio"
+                                           name="no" value="2"> No
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                <button onclick="parent.location='/'" type="button"
+                                        class="btn btn-primary pull-right">
+                                    Cancel
+                                </button>
+                                <button type="submit" onclick="parent.location='/#/Profile'"
+                                        class="btn btn-success pull-right">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
