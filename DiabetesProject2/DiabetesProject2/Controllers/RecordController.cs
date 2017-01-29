@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace DiabetesProject2.Controllers
 {
-    public class RecordSugarController : Controller
+    public class RecordController : Controller
     {
-        // GET: RecordSugar
-        public ActionResult RecordSugar()
+        // GET: Record
+        public ActionResult Record()
         {
             return View();
         }
