@@ -164,6 +164,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="DiabetesJS\AddFood.js" />
+    <Content Include="DiabetesJS\addPicture.js" />
     <Content Include="DiabetesJS\app.js" />
     <Content Include="DiabetesJS\CalSugar.js" />
     <Content Include="DiabetesJS\Home.js" />
@@ -173,6 +174,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\language\thailand_icon_sm.png" />
+    <Content Include="Images\language\USA__Icon_.png" />
     <Content Include="Images\Login\logo-100.png" />
     <Content Include="Images\catering-icon.png" />
     <Content Include="Images\food.png" />
