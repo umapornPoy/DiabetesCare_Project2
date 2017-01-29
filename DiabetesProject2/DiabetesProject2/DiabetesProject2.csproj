@@ -5204,7 +5204,6 @@
     <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\Register\Register.cshtml" />
     <Content Include="Views\Register\EditProfile.cshtml" />
-    <Content Include="Views\Register\Profile.cshtml" />
     <Content Include="Views\CalSugar\AddFood.cshtml" />
     <Content Include="Views\Record\RecordSugar.cshtml" />
   </ItemGroup>
