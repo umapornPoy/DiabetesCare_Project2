@@ -18,5 +18,16 @@ namespace DiabetesProject2.Controllers
         {
             return View();
         }
+
+        public ActionResult FoodDetail()
+        {
+            return View();
+        }
+
+        public ActionResult ShowFood()
+        {
+            return View();
+        }
+
     }
 }
