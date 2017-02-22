@@ -35,228 +35,258 @@
 </head>
 <body>
     <!-- page content -->
-    <div id="head" class="panel panel-default" role="main">
-        <div id="head" class="panel-heading ui-draggable-handle">
-            <h1 class="panel-title" style="color:white" align="center"></h1>
-        </div>
-        <div class="clearfix"></div>
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
-                    <div class="x_title">
-                        <h2>
-                            Register
-                        </h2>
-                        <div class="clearfix"></div>
-                    </div>
+    <div ng-controller="RegisterController">
+        <div id="head" class="panel panel-default" role="main">
+            <div id="head" class="panel-heading ui-draggable-handle">
+                <h1 class="panel-title" style="color:white" align="center"></h1>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="x_panel">
+                        <div class="x_title">
+                            <h2>
+                                Register
+                            </h2>
+                            <div class="clearfix"></div>
+                        </div>
 
-                    <div class="x_content">
-                        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                        <div class="x_content">
+                            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12 form-group has-feedback">
-                                    UserName
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" class="form-control has-feedback-left" id="username" placeholder="username" required="required">
-                                    <span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12 form-group has-feedback">
+                                        Username
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" class="form-control has-feedback-left" id="username" placeholder="username" required="required" ng-model="contact.username">
+                                        <span class="fa fa-unlock-alt form-control-feedback left" aria-hidden="true"></span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12 form-group has-feedback">
-                                    Password
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="password" class="form-control has-feedback-left" id="password" placeholder="password" required="required">
-                                    <span class="fa fa-unlock-alt form-control-feedback left" aria-hidden="true"></span>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12 form-group has-feedback">
+                                        Password
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="password" class="form-control has-feedback-left" id="password" placeholder="password" required="required" ng-model="contact.password">
+                                        <span class="fa fa-unlock-alt form-control-feedback left" aria-hidden="true"></span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12 form-group has-feedback">
-                                    ConfirmPassword
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="password" class="form-control has-feedback-left" id="confirm" placeholder="confirm password" required="required">
-                                    <span class="fa fa-unlock-alt form-control-feedback left" aria-hidden="true"></span>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12 form-group has-feedback">
+                                        ConfirmPassword
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="password" class="form-control has-feedback-left" id="confirm" placeholder="confirm password" required="required" ng-model="contact.confirm">
+                                        <span class="fa fa-unlock-alt form-control-feedback left" aria-hidden="true"></span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">
-                                    Firstname
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="firstname" required="required" class="form-control col-md-7 col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name" ng-model="contact.firstname">
+                                        Firstname
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="firstname" required="required" class="form-control col-md-7 col-xs-12">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">
-                                    Lastname
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="lastname" name="lastname" required="required" class="form-control col-md-7 col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">
+                                        Lastname
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="text" id="lastname" name="lastname" required="required" class="form-control col-md-7 col-xs-12" ng-model="contact.lastname">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label for="genders" class="control-label col-md-3 col-sm-3 col-xs-12">
-                                    Gender
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <p>
-                                        <input class="flat iradio_flat-green" ng-model="register.gender" type="radio"
-                                               name="genders" value="1" />
-                                        Male
-                                        <input class="flat iradio_flat-green" type="radio" ng-model="register.gender"
-                                               name="gender" value="2" />
-                                        Female
-                                    </p>
+                                <div class="form-group">
+                                    <label for="genders" class="control-label col-md-3 col-sm-3 col-xs-12">
+                                        Gender
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <p>
+                                            <input class="flat iradio_flat-green" type="radio"
+                                                   name="genders" value="1" ng-model="contact.gender" />
+                                            Male
+                                            <input class="flat iradio_flat-green" type="radio"
+                                                   name="gender" value="2" ng-model="contact.gender" />
+                                            Female
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="phone">
-                                    Email
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="email" class="form-control has-feedback-left" id="email" placeholder="example@email.com" required="required">
-                                    <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="phone">
+                                        Email
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="email" class="form-control has-feedback-left" id="email" placeholder="example@email.com" required="required" ng-model="contact.email">
+                                        <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">
-                                    Age
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="number" id="lastname" name="lastname" required="required" class="form-control col-md-7 col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">
+                                        Age
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="number" id="lastname" name="lastname" required="required" class="form-control col-md-7 col-xs-12" ng-model="contact.age">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-3" for="last-name">
-                                    Weight
-                                </label>
-                                <div class="col-md-2 col-sm-3 col-xs-3">
-                                    <input type="number" id="lastname" name="lastname" required="required" class="form-control col-md-2 col-xs-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-3" for="last-name">
+                                        Weight
+                                    </label>
+                                    <div class="col-md-2 col-sm-3 col-xs-3">
+                                        <input type="number" id="lastname" name="lastname" required="required" class="form-control col-md-2 col-xs-6" ng-model="contact.weight">
+                                    </div>
+                                    <label class="control-label col-md-1 col-sm-1 col-xs-1" for="height">
+                                        Height
+                                    </label>
+                                    <div class="col-md-2 col-sm-2 col-xs-3">
+                                        <input type="number" id="lastname" name="lastname" required="required" class="form-control col-md-2 col-xs-6" ng-model="contact.height">
+                                    </div>
                                 </div>
-                                <label class="control-label col-md-1 col-sm-1 col-xs-1" for="height">
-                                    Height
-                                </label>
-                                <div class="col-md-2 col-sm-2 col-xs-3">
-                                    <input type="number" id="lastname" name="lastname" required="required" class="form-control col-md-2 col-xs-6">
-                                </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">
-                                    Type
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <select class="form-control">
-                                        <option value="">Select Type</option>
-                                        <option value="1">insulin</option>
-                                        <option value="2">Not insulin</option>
-                                    </select>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                                        Type
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <select class="form-control" ng-model="contact.type">
+                                            <option value="">Select Type</option>
+                                            <option value="1">insulin</option>
+                                            <option value="2">Not insulin</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">
-                                    Complication
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <select class="form-control">
-                                        <option value="">Select Complication</option>
-                                        <option value="1">retinopathy</option>
-                                        <option value="2">nephropathy</option>
-                                        <option value="3">neuropathy</option>
-                                        <option value="4">Diabetic ulcer</option>
-                                        <option value="5">Diabetic foot</option>
-                                    </select>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                                        Complication
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <select class="form-control" ng-model="contact.complication">
+                                            <option value="">Select Complication</option>
+                                            <option value="1">retinopathy</option>
+                                            <option value="2">nephropathy</option>
+                                            <option value="3">neuropathy</option>
+                                            <option value="4">Diabetic ulcer</option>
+                                            <option value="5">Diabetic foot</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">
-                                    Disease
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <select class="form-control">
-                                        <option value="">Select Disease</option>
-                                        <option value="1">Cardiovascular Disease)</option>
-                                        <option value="2">High blood pressure</option>
-                                        <option value="3">kidney disease</option>
-                                        <option value="4">peripheral neuropathy Disease</option>
-                                        <option value="5">Eye disease</option>
-                                    </select>
+                                <div class="form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12">
+                                        Disease
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <select class="form-control" ng-model="contact.disease">
+                                            <option value="">Select Disease</option>
+                                            <option value="1">Cardiovascular Disease)</option>
+                                            <option value="2">High blood pressure</option>
+                                            <option value="3">kidney disease</option>
+                                            <option value="4">peripheral neuropathy Disease</option>
+                                            <option value="5">Eye disease</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label for="genders" class="control-label col-md-3 col-sm-3 col-xs-12">
-                                    Drug allergy
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <p>
-                                        <input class="flat iradio_flat-green" type="radio"
-                                               name="genders" value="1"> Yes
-                                        <input class="flat iradio_flat-green" type="radio"
-                                               name="gender" value="2"> No
-                                    </p>
+                                <div class="form-group">
+                                    <label for="genders" class="control-label col-md-3 col-sm-3 col-xs-12">
+                                        Drug allergy
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <p>
+                                            <input class="flat iradio_flat-green" type="radio"
+                                                   name="Drugs" value="1" ng-model="contact.dragallergy"> Yes
+                                            <input class="flat iradio_flat-green" type="radio"
+                                                   name="Drug" value="2" ng-model="contact.dragallergy"> No
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="ln_solid"></div>
-                            <div class="form-group">
-                                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                    <button onclick="parent.location='/Login/Login'" type="button"
-                                            class="btn btn-primary pull-right">
-                                        Cancel
-                                    </button>
-                                    <button type="submit" onclick="parent.location='/'"
-                                            class="btn btn-success pull-right">
-                                        Submit
-                                    </button>
+                                <div class="form-group" ng-model="contact.emaildoctor">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="phone">
+                                        Email Doctor
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input type="email" class="form-control has-feedback-left" id="email.doctor" placeholder="example@email.com" required="required">
+                                        <span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
 
+                                <div class="ln_solid"></div>
+                                <div class="form-group">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                        <button onclick="parent.location = '/Login/Login'" type="button"
+                                                class="btn btn-primary pull-right">
+                                            Cancel
+                                        </button>
+
+                                        <button type="submit" class="btn btn-success pull-right" ng-click="addContact()">
+                                            Add
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                                <div class="ln_solid"></div>
+                                @*<div class="form-group">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                        <button onclick="parent.location='/Login/Login'" type="button"
+                                                class="btn btn-primary pull-right">
+                                            Cancel
+                                        </button>
+                                        <button type="submit" onclick="parent.location='/'"
+                                                class="btn btn-success pull-right">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>*@
+                            </form>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    @*---------------------------------------------- Modal Alert Success ------------------------------------------*@
-    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="defModalHead" aria-hidden="true" align="center">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">{{'Close' | translate}}</span></button>
-                    <h4 class="modal-title" id="defModalHead">RegisterSuccess </h4>
-                </div>
-                <div class="modal-body">
-                    <img src="~/Images/register/right_icon.png" class="img-responsive" />
-                    <h4>mainpage </h4>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" onclick="parent.location='/#/Point'" class="btn btn-success" data-dismiss="modal">{{'YES' | translate}} </button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">NO </button>
+        @*---------------------------------------------- Modal Alert Success ------------------------------------------*@
+        @*<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="defModalHead" aria-hidden="true" align="center">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">{{'Close' | translate}}</span></button>
+                        <h4 class="modal-title" id="defModalHead">RegisterSuccess </h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="~/Images/register/right_icon.png" class="img-responsive" />
+                        <h4>mainpage </h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" onclick="parent.location='/#/Point'" class="btn btn-success" data-dismiss="modal">{{'YES' | translate}} </button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">NO </button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div>*@
     </div>
-
+    
     <!-- /footer content -->
     <script src="~/Scripts/angular.js"></script>
     <script src="~/Scripts/angular-route.min.js"></script>
     <script src="~/Scripts/angular-sanitize.js"></script>
     <script src="~/DiabetesJS/app.js"></script>
+    <script src="~/controller/Register.js"></script>
+    @*<script src="~/DiabetesJS/server.js"></script>*@
 
+    <script src="~/server.js"></script>
     <!-- jQuery -->
     <script src="~/Template/vendors/jquery/dist/jquery.min.js"></script>
 
@@ -299,7 +329,7 @@
     <!-- Flot -->
     <script data-require="ui-bootstrap@1.0.0" data-semver="1.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.0.0/ui-bootstrap-tpls.js"></script>
 
-    <script>
+    @*<script>
     $(document).ready(function() {
     $.listen('parsley:field:validate', function() {
     validateFront();
@@ -321,7 +351,7 @@
     try {
     hljs.initHighlightingOnLoad();
     } catch (err) {}
-    </script>
+    </script>*@
 
 
 </body>

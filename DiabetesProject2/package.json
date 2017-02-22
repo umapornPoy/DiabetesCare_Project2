@@ -1,0 +1,23 @@
+{
+  "name": "diabetes",
+  "version": "1.0.0",
+  "description": "diabetescare web application",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mongojs": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/umapornPoy/DiabetesCare_Project2"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}

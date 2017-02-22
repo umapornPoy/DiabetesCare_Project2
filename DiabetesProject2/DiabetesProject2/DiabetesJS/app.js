@@ -1,4 +1,4 @@
-﻿var app = angular.module('Diabetes', ['ngRoute','ui.bootstrap']);
+﻿var app = angular.module('Diabetes', ['ngRoute']);
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
 
@@ -35,6 +35,10 @@ app.config(['$routeProvider', function ($routeProvider) {
              templateUrl: 'Nutrition/Nutrients',
              controller: 'NutrientsController'
          })
+       /* .when('/Register', {
+            templateUrl: 'Register/Register',
+            controller: 'RegisterController'
+        })  */
      .otherwise({
          templateUrl: '/'
      })
