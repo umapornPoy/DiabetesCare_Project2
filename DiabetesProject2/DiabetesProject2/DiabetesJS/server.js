@@ -1,10 +1,10 @@
-var express = require('express');
-var app = express();
+//var express = require('express');
+//var app = express();
 var mongojs = require('mongojs');
 var db = mongojs('diabetesmember', ['diabetesmember']);
 var bodyParser = require('body-parser');
 
-app.use(express.static(__dirname + '/DiabetesProject2'));
+//app.use(express.static(__dirname + '/DiabetesProject2'));
 app.use(bodyParser.json());
 
 app.get('/diabetesmember', function (req, res) {
@@ -54,5 +54,5 @@ app.put('/diabetesmember/:id', function (req, res) {
   );
 });
 
-app.listen(61576);
-console.log("Server running on port 61576");
+//app.listen(61576);s
+//console.log("Server running on port 61576");

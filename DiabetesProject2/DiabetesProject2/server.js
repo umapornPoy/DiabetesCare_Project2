@@ -4,8 +4,24 @@ var mongojs = require('mongojs');
 var db = mongojs('diabetesmember', ['diabetesmember']);
 var bodyParser = require('body-parser');
 
+var path = require('path');
+var http = require('http');
+
+var port = process.env.PORT || 61576;
+
+var core = require('cors');
+app.use(cors());  
+
 app.use(express.static(__dirname + '/DiabetesJS'));
 app.use(bodyParser.json());
+
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
+
 
 app.get('/diabetesmember', function (req, res) {
   console.log('I received a GET request');
@@ -32,6 +48,8 @@ app.delete('/diabetesmember/:id', function (req, res) {
   });
 });
 
+
+
 app.get('/diabetesmember/:id', function (req, res) {
   var id = req.params.id;
   console.log(id);
@@ -54,5 +72,7 @@ app.put('/diabetesmember/:id', function (req, res) {
   );
 });
 
-app.listen(61576);
-console.log("Server running on port 61576");
+
+app.listen(port, function() {
+    console.log('Listening on port ' + port);
+});
