@@ -162,9 +162,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\models\user.js" />
+    <Content Include="config\database.js" />
+    <Content Include="config\passport.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\ui-bootstrap-csp.css" />
+    <Content Include="controller\Login.js" />
     <Content Include="controller\Register.js" />
     <Content Include="Css\progressbar.css" />
     <Content Include="DiabetesJS\AddFood.js" />
@@ -977,7 +981,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="DiabetesJS\server.js" />
     <Content Include="server.js" />
     <Content Include="Template\build\css\custom.css" />
     <Content Include="Template\build\css\custom.min.css" />

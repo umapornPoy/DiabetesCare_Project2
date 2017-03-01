@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" ng-app="Diabetes">
+<html lang="en" ng-app="SigninApp">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
@@ -22,7 +22,7 @@
     <link href="~/Template/build/css/custom.min.css" rel="stylesheet">
 </head>
 
-<body class="login">
+<body class="login" ng-controller="LoginController">
     <div>
         <a class="hiddenanchor" id="signup"></a>
         <a class="hiddenanchor" id="signin"></a>
@@ -36,15 +36,15 @@
                     <form>
                         <h1>Login</h1>
                         <div>
-                            <input type="text" class="form-control" placeholder="Username" required="" />
+                            <input type="text" class="form-control" placeholder="Username" required="" ng-model="user.username"/>
                         </div>
                         <div>
-                            <input type="password" class="form-control" placeholder="Password" required="" />
+                            <input type="password" class="form-control" placeholder="Password" required="" ng-model="user.password" />
                         </div>
                         <div class="separator">
                             <div>
                                 <div class="col-md-6 col-sm-6 col-xs-6">
-                                    <a href="/" class="btn btn-info btn-block"><span class="fa fa-sign-in"></span> Log in</a>
+                                    <a ng-click="login(user)" @*href="/"*@ class="btn btn-info btn-block"><span class="fa fa-sign-in"></span> Log in</a>
                                 </div>
 
                                 <div class="col-md-6 col-sm-6 col-xs-6">
@@ -64,6 +64,13 @@
 
         </div>
     </div>
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/angular-sanitize.min.js"></script>
+    <script src="~/controller/Login.js"></script>
+    <script src="~/server.js"></script>
+
 </body>
 </html>
 

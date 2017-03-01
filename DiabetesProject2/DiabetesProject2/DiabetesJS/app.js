@@ -35,10 +35,10 @@ app.config(['$routeProvider', function ($routeProvider) {
              templateUrl: 'Nutrition/Nutrients',
              controller: 'NutrientsController'
          })
-       /* .when('/Register', {
+        .when('/Register', {
             templateUrl: 'Register/Register',
             controller: 'RegisterController'
-        })  */
+        })
      .otherwise({
          templateUrl: '/'
      })
